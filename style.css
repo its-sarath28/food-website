@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    background-color: #283747;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+:root{
+    --red: #FF4000;
+    --white: #fff;
+    --box-bg: #F5D0A9;
+    --black: #333;
+    --border: .2rem solid var(--red)
+}
+
+.btn{
+    color: var(--white);
+    background-color: var(--red);
+    text-transform: capitalize;
+    margin-top: 1.8rem;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    color: var(--red);
+    background-color: var(--white);
+    border: none;
+}
+
+.heading{
+    color: var(--red);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.sub-heading{
+    color: var(--white);
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.header .flex{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%;
+}
+
+.header .flex .logo{
+    color: var(--red);
+    font-size: 2.5rem;
+}
+
+.header .flex .navbar .link{
+    color: var(--white);
+    margin: 0 1rem;
+    font-size: 1.8rem;
+}
+
+.header .flex .navbar .link.active{
+    color: var(--red);
+}
+
+.header .flex .navbar .link:hover{
+    color: var(--red);
+}
+
+#menu-btn{
+    display: none;
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.home .flex{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home .flex .content{
+    flex: 1 1 40rem;
+    align-items: center;
+    justify-content: center; 
+}
+
+.home .flex .content h1{
+    font-size: 5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.home .flex .content h4{
+    color: var(--white);
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.home .flex .image{
+    flex: 1 1 25rem;
+}
+
+.home .flex .image img{
+    width: 80%;
+}
+
+.about .flex{
+    display: flex;
+    align-items: center;
+}
+
+.about .flex .image{
+    flex: 1 1 40rem;
+}
+
+.about .flex .image img{
+    width: 70%;
+}
+
+.about .flex .abt-content{
+    flex: 1 1 40rem;
+}
+
+.about .flex .abt-content h1{
+    color: var(--white);
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.about .flex .abt-content p{
+    color: var(--white);
+    width: 90%;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.menu .heading{
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 1rem;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.menu .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--box-bg);
+}
+
+.menu .box-container .box img{
+    background-color: var(--box-bg);
+    height: 30rem;
+    object-fit: contain;
+}
+
+.menu .box-container .box h3{
+    background-color: var(--box-bg);
+    color: var(--black);
+    margin-top: 1rem;
+    font-size: 2rem;
+
+}
+
+.menu .box-container .box p{
+    background-color: var(--box-bg);
+    color: var(--red);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.service .heading{
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.service .box-container .box{
+    text-align: center;
+    padding: 2rem;
+}
+
+.service .box-container .box img{
+    height: 10rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.service .box-container .box h3{
+    color: var(--red);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.service .box-container .box p{
+    color: var(--white);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.contact{
+    padding-top: 5rem;
+}
+
+.contact .container{
+    background-color: var(--box-bg);
+    border-radius: .5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.contact .container h1{
+    background-color: var(--box-bg);
+    padding: 8rem;
+    font-size: 5rem;
+}
+
+/* .footer .footer-links{
+    margin-top: 5rem;
+    display: flex;
+    padding: 2rem 9%;
+    justify-content: space-between;
+}
+
+.footer .footer-links .main-link h5,
+.footer .footer-links .icons h5{
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    border-bottom: 1.5px solid var(--red);
+    text-underline-offset: 2.5rem;
+}
+
+.footer .footer-links .main-link a{
+    display: block;
+    color: var(--red);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.footer .footer-links .main-link a:hover{
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: .6rem;
+}
+
+.footer .footer-links .icons i{
+    margin: 0 .6rem;
+    font-size: 1.5rem;
+    background-color: var(--red);
+    padding: 1rem;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+.footer .footer-links .icons i:hover{
+    color: var(--red);
+    background-color: var(--white);
+} */
+
+.footer .box-container{
+    padding: 2rem 9%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    color: var(--red);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--white);
+}
+
+.footer .box-container .box i{
+    font-size: 1.4rem;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 1rem;
+    margin: 0.8rem;
+    border-radius: 50%;
+}
+
+.footer .box-container .box i:hover{
+    color: var(--red);
+    background-color: var(--white);
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    background-color: var(--red);
+    font-size: 1.8rem;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.footer .credit span{
+    color: #fff;
+    background-color: var(--red);
+}
+
+/* ------media queries------ */
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px){
+
+    section{
+        padding: 2rem 3%;
+    }
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .flex .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        border-top: var(--border);
+        border-bottom: var(--border);
+        background-color: var(--white);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .flex .navbar a{
+        background-color: var(--white);
+        color: var(--red) !important;
+        display: block;
+        margin: 2rem !important;
+        padding: 1rem 0;
+        padding-left: 1rem;
+    }
+
+    .header .flex .navbar a:hover{
+        background-color: var(--red) !important;
+        color: var(--white) !important;
+    }
+
+    .header .flex .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    .home .flex .content h4{
+        font-size: 1.8rem;
+    }
+
+    .home .flex .image{
+        flex: 1 1 40rem;
+    }
+
+    .home .flex .image img{
+        width: 100% !important;
+    }
+
+    .about .flex .abt-content h1{
+        font-size: 1.5rem;
+    }
+
+    .about .flex .image img{
+        width: 100% !important;
+    }
+
+    .service .box-container,
+    .menu .box-container{
+        grid-template-columns: 1fr;
+    }
+
+    .service .box-container .box p{
+        font-size: 2rem !important;
+    }
+
+    .contact .container h1{
+        padding: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .footer .footer-links .main-link{
+        display: block;
+    }
+
+
+}
